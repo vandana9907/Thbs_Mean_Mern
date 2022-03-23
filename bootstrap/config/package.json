@@ -1,0 +1,27 @@
+{
+  "name": "thsb-learn",
+  "version": "1.0.0",
+  "description": "this is demo ",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vandana9907/Thbs_Mean_Mern.git"
+  },
+  "keywords": [
+    "start"
+  ],
+  "author": "thbs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vandana9907/Thbs_Mean_Mern/issues"
+  },
+  "homepage": "https://github.com/vandana9907/Thbs_Mean_Mern#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "moment": "^2.29.1",
+    "react": "^17.0.2"
+  }
+}
