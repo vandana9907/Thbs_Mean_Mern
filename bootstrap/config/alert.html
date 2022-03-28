@@ -25,14 +25,22 @@
         <button id="show-alert" class="btn btn-primary"> Show alert </button>
     
         <script>
-            let btnAlert = document.getElementById('show-alert');
+            let mycloseBtn = document.getElementById('close-alert');
+            mycloseBtn.addEventListener('click',function (){
+                let alertNode = document.querySelector('.alert');
+                let alert = bootstrap.Alert.getInstance(alertNode);
+                alert.close();
+            });
+            let btnAlert = document.getElementById(show-alert)
     
-            let alHolder = document.getElementById('alert-Holder');
+            let alHolder  = document.getElementById('alert-Holder');
+
+            
     
             btnAlert.addEventListener('click', function () {
                 let wrapper = document.createElement('div');
     
-                wrapper.innerHTML = "<div class='alert alert-primary alert-dismissible' role='alert'>A simple primary alert—check it out!</div> ";
+                wrapper.alertElement = "<div class='alert alert-primary alert-dismissible' role='alert'>A simple primary alert—check it out!</div> ";
     
                 alHolder.append(wrapper);
     
