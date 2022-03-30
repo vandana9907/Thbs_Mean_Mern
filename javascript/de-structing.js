@@ -1,52 +1,47 @@
 
+ 
+   
+// ES5 --> from array you get value inside variable
 
-//es5 / old way
-let getPersonInfo = () => {
+var list =[1,2,3]; //array 10 elament;
+
+var  a= list[0], b=list[2];
+
+// let name ='thbs';
+// let hello ='goodby';
+// let name = 'thbs' , hello='goodby';
+// let name,hello;
+
+let getPersonInfo =() => {
     return {
-        op: 'plus',
-        lhs: 'left-side',
-        rhs: 'right-side'
-    }
+        op :'plus',
+        lhs : 'left-side',
+        rhs : 'right-side'
+     }
 }
 
-var tmp = getPersonInfo();
-// console.log(tmp);
-// var op = tmp.op;
-// var lhs = tmp.lhs;
-// var rhs = tmp.rhs;
+var tmp =getPersonInfo();
 
-//short ES 6 -- object de-struct 
-//[] {}
-let { op, lhs, rhs } = getPersonInfo(); //object 
-console.log(op, lhs, rhs);
-
+let { op, lhs ,rhs} = getPersonInfo();
+console.log(op,lhs,rhs);
 
 let cmpy = {
     name_ss: 'thbs',
     noOfEmp: 100,
-    foundation: 'March 2020',
-    address: {
-        premant: {
-            city: 'nellore'
+    foundation:'March 2020',
+    address:{
+        permanant :{
+            city : 'mum'
         },
-        current: {
-            city: 'nellore',
-            pin: 524315
+        current :{
+            city:'bang',
+            pin :2020
         }
-    }
-};
+        }
+    };
 
-//cmpy.address.current.city// 
-//cmpy.address.current.pin// 
-//cmpy.address.current.abc// 
+    let {
+        noOfEmp,foundation,address:{permanant:{city}},
+    } =cmpy;
 
-
-//nested object property destructiing 
-let {
-    noOfEmp,
-    foundation,
-    address: { premant: { city } },
-    address: { current: { pin } }
-} = cmpy;
-
-console.log(noOfEmp, foundation, city, pin);
+    console.log(noOfEmp, foundation,);
